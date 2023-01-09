@@ -6,21 +6,21 @@ This practice comprises of 3 exercises.
 
 Box Office is a popular and authoritative source of movies and TV shows. One could find ratings and reviews for the newest movies and TV shows. ​
 
-​Create a single-page application using Angular CLI that displays a list of trending movies attractively to the end users. Movie information like movie name, poster, genre, and ratings should be visible to the user. The users should be able to search for a movie from the list of movies displayed. 
+​Create a single-page application using Angular CLI that displays a list of trending movies attractively to the end users. Movie information like movie name, poster, genre, and ratings should be visible to the user. The users should be able to search for a movie from the list of movies displayed.
 
 ### Problem Statements
 
 #### Practice 1 - Create Components for Angular Box-Office App
 
 - Create an Angular app named `Box-Office` using the Angular CLI command:​
-                 `ng new --skip-tests box-office`​
+  `ng new --skip-tests box-office`​
 - Create the identified components for the Box Office app.​
 - To create a component, use the Angular CLI command.​
-     `ng generate component <component-name>` or `ng g c <component-name>`​
+  `ng generate component <component-name>` or `ng g c <component-name>`​
 - Render the component as mentioned below:​
-    - `App` component should render `Header` and `Dashboard` components​
-    - `Header` component should render the site name `Box Office`​
-    - `Dashboard` component should display the title "Trending Movies" using text interpolation​.
+  - `App` component should render `Header` and `Dashboard` components​
+  - `Header` component should render the site name `Box Office`​
+  - `Dashboard` component should display the title "Trending Movies" using text interpolation​.
 - Below is the snapshot of the output expected.
 
 ![](./p1-create-components/box-office-output.png)
@@ -44,14 +44,12 @@ Box Office is a popular and authoritative source of movies and TV shows. One cou
 - Modify the `Dashboard` component to add a search feature to the `Box-Office` app.​
 - Declare `searchText` as a component property and bind it with the template using ngModel to capture the value when the user types in the search text box.​
 - Add the `Go` button, which calls the component's search() method whenever the button is clicked using the event binding technique.​
-       `<button (click) = "search()" type = button>Go</button>`​
-- Similarly, add the `Reset` button to call the component's reset()  method to clear any typed text.​
-       `<button (click) = "reset()" type = button>Reset</button>`​
+  `<button (click) = "search()" type = button>Go</button>`​
+- Similarly, add the `Reset` button to call the component's reset() method to clear any typed text.​
+  `<button (click) = "reset()" type = button>Reset</button>`​
 - Write the search logic inside the search() method to filter the movies using the Array filter method.​
-    - All movies should be displayed when the search text is empty.​
+  - All movies should be displayed when the search text is empty.​
 - Inside the reset() method, set the searchText value equal to an empty string and movies property value to the `MOVIES` array.​
 - Below is the snapshot of the output expected:
 
 ![](./p3-search-movies/search-movies.png)
-
-

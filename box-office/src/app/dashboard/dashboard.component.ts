@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Movie } from '../models/movie';
+import { MOVIES } from '../models/movies';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  title: string = 'Box Office';
+  title: string = 'Trending Movies';
+  movies: Movie[] = MOVIES;
 }

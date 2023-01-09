@@ -1,3 +1,14 @@
 <div class="dashboard">
     <h1>{{title}}</h1>
+   <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile style="background-color:rgb(102, 9, 242);">
+        <p *ngFor="let movie of movies">
+            {{movie.id}}
+            {{movie.movieTitle}}
+            {{movie.image}}
+            {{movie.genre}}
+            {{movie.rating}}     
+        </p>
+    </mat-grid-tile>
+   </mat-grid-list>
 </div>

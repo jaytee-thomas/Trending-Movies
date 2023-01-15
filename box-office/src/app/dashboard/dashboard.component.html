@@ -1,14 +1,22 @@
-<div class="dashboard">
-    <h1>{{title}}</h1>
-   <mat-grid-list cols="3" rowHeight="100px">
-    <mat-grid-tile style="background-color:rgb(102, 9, 242);">
-        <p *ngFor="let movie of movies">
-            {{movie.id}}
-            {{movie.movieTitle}}
-            {{movie.image}}
-            {{movie.genre}}
-            {{movie.rating}}     
-        </p>
-    </mat-grid-tile>
-   </mat-grid-list>
+
+    <div class="title">
+        <h1>{{title}}</h1>  
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search movies" />
+        <button (click)="search()" type="button">Go</button>
+        <button (click)="reset()" type="button">Clear</button>
+    </div>
+    
+    <div class="dashboard">
+        <div  class="card" *ngFor="let movie of movies" >
+            <div class="grid-container"> 
+            
+                <img src="../../assets/images/{{movie.movieTitle}}.jpg" alt={{movie.movieTitle}}>
+                <img src="../../assets/images/{{movie.rating}}.jpg" alt={{movie.rating}}>
+                <div class="card-content">
+                    <span>{{movie.movieTitle}} {{movie.genre}} {{movie.yearOfRelease}}</span>
+                </div>        
+            </div>
+        </div> 
 </div>

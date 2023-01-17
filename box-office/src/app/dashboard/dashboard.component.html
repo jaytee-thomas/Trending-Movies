@@ -13,9 +13,9 @@
             <div class="grid-container"> 
             
                 <img src="../../assets/images/{{movie.movieTitle}}.jpg" alt={{movie.movieTitle}}>
-                <img src="../../assets/images/{{movie.rating}}.jpg" alt={{movie.rating}}>
+                <img class="rating" src="../../assets/images/rating.svg" alt={{movie.rating}}><span>{{movie.rating}}</span>
                 <div class="card-content">
-                    <span>{{movie.movieTitle}} {{movie.genre}} {{movie.yearOfRelease}}</span>
+                    <span class="catagory">{{movie.movieTitle}}&nbsp;{{movie.genre}}&nbsp;{{movie.yearOfRelease}}</span>
                 </div>        
             </div>
         </div> 

@@ -3,7 +3,16 @@
   justify-content: center;
   padding-top: 20px;
 }
-
+.search-box {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4px;
+  margin-left: 60px;
+  border: #a61e4d solid 2px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 360px;
+}
 .dashboard {
   display: flex ;
     margin: 20px;
@@ -38,9 +47,25 @@ img {
      text-align:center;
     }
 
+.rating {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+.catagory {
+  display: flex;
+  justify-content: flex-start;
+
+}
     input[type=text] {
       border: none;
       border-bottom: 2px solid;
+      border-radius: 4px 4px 4px 4px;
+      margin: 4px 10px 0px 0px; 
+      padding: 10px;
+      height: 40px;
   }
   
   button {
